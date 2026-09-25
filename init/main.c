@@ -1006,6 +1006,7 @@ void start_kernel(void)
 	boot_cpu_init();
 	page_address_init();
 	pr_notice("%s", linux_banner);
+	printk(KERN_INFO "xperveka\n");
 	setup_arch(&command_line);
 	mm_core_init_early();
 	/* Static keys and static calls are needed by LSMs */
